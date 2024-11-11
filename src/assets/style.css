@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.conteners {
+  @apply flex text-4xl text-whiteColor font-bold  w-52 h-52 items-center justify-center bg-indigo-500 rounded border border-gray-400;
+}
+.btn {
+  @apply font-bold bg-secondary-300 rounded text-gray-200 mt-3 py-1 pb-pbuttom px-2 hover:bg-indigo-600 hover:text-gray-100 transition;
+}
+.event_search {
+  @apply w-1;
+}
+
+/* ====================================================== */
+.mainCScroll {
+  height: 513px;
+  width: 100%;
+  overflow-y: scroll;
+}
+.conteners_scroll {
+  display: block;
+  border-radius: 10px;
+}
+#mainScroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #0d0d0d;
+}
+#mainScroll::-webkit-scrollbar {
+  width: 12px;
+
+  background-color: #000000;
+}
+
+#mainScroll::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: gray;
+}
+/*=============aside================== */
+.mainCScroll_side {
+  height: 435px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+#mainScroll_side::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #0d0d0d;
+}
+#mainScroll_side::-webkit-scrollbar {
+  width: 8px;
+  background-color: #000000;
+}
+
+#mainScroll_side::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #494949;
+  border-radius: 3px;
+}
+/*==============================*/
+.now {
+  display: flex;
+  align-items: end;
+  height: 12px;
+}
+
+.bar {
+  width: 2px;
+  margin: 0px 0.5px;
+  background: #02b002;
+  animation: pulse 2s infinite;
+}
+.n1 {
+  animation-delay: 0.2s;
+}
+.n2 {
+  animation-delay: 0.5s;
+}
+.n3 {
+  animation-delay: 1.2s;
+}
+.n4 {
+  animation-delay: 0.9s;
+}
+.n5 {
+  animation-delay: 2.3s;
+}
+@keyframes pulse {
+  0% {
+    height: 1px;
+  }
+  10% {
+    height: 5px;
+  }
+  50% {
+    height: 8px;
+  }
+  60% {
+    height: 5px;
+  }
+  80% {
+    height: 15px;
+  }
+  100% {
+    height: 1px;
+  }
+}
+/* ===================================== */
+.child {
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+.content:hover .child {
+  bottom: 35px;
+  transform: translate(-50%, 50%);
+}
+/* ======================== */
+/* .icon-white {
+  filter: invert(1) brightness(2);
+} */
