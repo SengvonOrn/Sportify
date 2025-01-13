@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full bg-primary rounded h-400">
+  <header class="w-full bg-primary overflow-hidden rounded h-400">
     <nav class="dark:bg-slate-900 p-3 pt-4 rounded-t-md sticky">
       <div class="flex justify-between">
         <div class="flex gap-x-2 text-white">
